@@ -3,9 +3,11 @@ const UserController = require('../controllers/UserController')
 const auth = require('../middleware/auth')
 const userRouter = require('./userRoute')
 const router = express.Router()
+const Controller = require('../controllers/controller');
 
-router.get('/', auth, (req, res) => {
-    res.send('test')
+// router.use('/user', userRouter)
+router.get('/',, auth, (req, res) => {
+    res.render('home.ejs')
 })
 
 router.get('/register', UserController.register)
@@ -17,6 +19,7 @@ router.get('/login', UserController.login) // -> test1234
 router.post('/login', UserController.postLogin)
 
 
-// router.use('/user', userRouter)
+
+router.get(`/books`, Controller.getBookList)
 
 module.exports = router
