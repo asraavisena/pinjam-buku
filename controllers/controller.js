@@ -11,6 +11,69 @@ class Controller {
       res.send(err)
     })
   }
+
+  static getAddBook(req, res) {
+    res.render(`addBook.ejs`)
+  }
+
+  static postAddBook(req, res) {
+    Book.create({
+      name: req.body.name,
+      penulis: req.body.penulis,
+      category: req.body.category,
+      description: req.body.description,
+      urlImage: req.body.urlImage,
+      stock: req.body.stock
+    })
+    .then(_ => {
+      res.redirect(`/books`)
+    })
+    .catch(err => {
+      console.log(err);
+      res.send(err)
+    })
+  }
+
+  static getDeleteBook(req, res) {
+    const id = req.params.id
+    Book.destroy({ where: { id }})
+    .then(_ => {
+      res.redirect(`/books`)
+    })
+    .catch(err => {
+      console.log(err);
+      res.send(err)
+    })
+  }
+  static getEditBook(req, res) {
+    Book.findDataByPkUsingStaticMethod(req.params.id)
+    .then(data => {
+      res.render(`editBook.ejs`, { data })
+    })
+    .catch(err => {
+      console.log(err);
+      res.send(err)
+    })
+  }
+
+  static postEditBook(req, res) {
+    const id = req.params.id
+    Book.update({
+      name: req.body.name,
+      penulis: req.body.penulis,
+      category: req.body.category,
+      description: req.body.description,
+      urlImage: req.body.urlImage,
+      stock: req.body.stock
+    }, { where: { id }})
+    .then(_ => {
+      res.redirect(`/books`)
+    })
+    .catch(err => {
+      console.log(err);
+      res.send(err)
+    })
+  }
 }
 
 module.exports = Controller

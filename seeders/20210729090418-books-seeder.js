@@ -8,7 +8,7 @@ module.exports = {
         penulis: "Niccolo Machiavelli",
         stock: 10,
         category: "Filsafat",
-        description: "Buku ini, buku tentang Filsafat ya, bukan buka yang lain :)Buku ini, buku tentang Filsafat ya, bukan buka yang lain :)",
+        description: "Buku ini, buku tentang Filsafat ya, bukan buku yang lain :)Buku ini, buku tentang Filsafat ya, bukan buku yang lain :)",
         urlImage: "https://img.my-best.id/press_component/item_part_images/cd90749313e62565b5df40fed09207e6.png?ixlib=rails-4.2.0&q=70&lossless=0&w=640&h=640&fit=clip",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -18,8 +18,8 @@ module.exports = {
         penulis: "Usborn",
         stock: 4,
         category: "Sains",
-        description: "Buku ini, buku tentang Sains ya, bukan buka yang lain :)",
-        urlImage: "https://lite.shopee.co.id/Buku-Ensiklopedia-Sains-By-Usborne-i.13264459.1934564735?smtt=307.1.2&gclid=CjwKCAjwo4mIBhBsEiwAKgzXOIniBY2tlYjidDvijRWjNrC1w6zMO5uYJNWuiO2xDd_LhCkaRxT_shoCbgcQAvD_BwE",
+        description: "Buku ini, buku tentang Sains ya, bukan buku yang lain :)",
+        urlImage: "https://id-test-11.slatic.net/p/9ccdd866602a33fc02d012660f6ede79.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -28,7 +28,7 @@ module.exports = {
         penulis: "Max Tegmark",
         stock: 10,
         category: "Teknologi",
-        description: "Buku ini, buku tentang Teknologi ya, bukan buka yang lain :)",
+        description: "Buku ini, buku tentang Teknologi ya, bukan buku yang lain :)",
         urlImage: "https://images-na.ssl-images-amazon.com/images/I/41-KHndhtVL._SX337_BO1,204,203,200_.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -38,7 +38,7 @@ module.exports = {
         penulis: "Victoria Finlay",
         stock: 20,
         category: "Seni",
-        description: "Buku ini, buku tentang Seni ya, bukan buka yang lain :)",
+        description: "Buku ini, buku tentang Seni ya, bukan buku yang lain :)",
         urlImage: "https://images-na.ssl-images-amazon.com/images/I/61IfdS6NaxL._SX450_BO1,204,203,200_.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -48,7 +48,7 @@ module.exports = {
         penulis: "Jonathan Black, Mark Booth",
         stock: 7,
         category: "Sejarah dan Geografi",
-        description: "Buku ini, buku tentang Sejarah dan Geografi ya, bukan buka yang lain :)",
+        description: "Buku ini, buku tentang Sejarah dan Geografi ya, bukan buku yang lain :)",
         urlImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347596754l/1841964.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -58,7 +58,7 @@ module.exports = {
         penulis: "Yazid bin Abdul Qadir Jawas",
         stock: 16,
         category: "Agama",
-        description: "Buku ini, buku tentang Agama ya, bukan buka yang lain :)",
+        description: "Buku ini, buku tentang Agama ya, bukan buku yang lain :)",
         urlImage: "https://www.bukukita.com/babacms/displaybuku/105764_f.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -68,7 +68,7 @@ module.exports = {
         penulis: "Sigmund Freud",
         stock: 14,
         category: "Psikologi",
-        description: "Buku ini, buku tentang Psikologi ya, bukan buka yang lain :)",
+        description: "Buku ini, buku tentang Psikologi ya, bukan buku yang lain :)",
         urlImage: "https://images-na.ssl-images-amazon.com/images/I/51Jj12iMZnL._SX331_BO1,204,203,200_.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -78,7 +78,7 @@ module.exports = {
         penulis: "Viktor E. Frankl",
         stock: 4,
         category: "Filsafat",
-        description: "Buku ini, buku tentang Filsafat ya, bukan buka yang lain :)",
+        description: "Buku ini, buku tentang Filsafat ya, bukan buku yang lain :)",
         urlImage: "https://img.my-best.id/press_component/item_part_images/4496778e7f7dc9e1db07a27c0f1609a9.jpg?ixlib=rails-4.2.0&q=70&lossless=0&w=640&h=640&fit=clip",
         createdAt: new Date(),
         updatedAt: new Date()
@@ -88,7 +88,7 @@ module.exports = {
         penulis: "Mark Twain, Guy Cardwell",
         stock: 8,
         category: "Sastra",
-        description: "Buku ini, buku tentang Sastra ya, bukan buka yang lain :)",
+        description: "Buku ini, buku tentang Sastra ya, bukan buku yang lain :)",
         urlImage: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546096879l/2956.jpg",
         createdAt: new Date(),
         updatedAt: new Date()
