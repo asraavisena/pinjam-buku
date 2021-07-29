@@ -17,7 +17,7 @@ class UserController {
             res.send(data)
         })
         .catch(err => {
-            res.send(err)
+            res.send(err.errors[0].message)
         })
     }
 
@@ -38,7 +38,7 @@ class UserController {
                     if(isPassMatch) {
                         req.session.isLogin = true
                         req.session.userId = data.id
-                        // req.session.isAdmin = data.isAdmin
+                        req.session.isAdmin = data.isAdmin
                         res.redirect('/')
                     } else {
                         res.send('Password or Email is wrong')
@@ -65,7 +65,7 @@ class UserController {
         })
             .then(data => {
                 // res.send(data)
-                res.render('user/borrowedBook', {data})
+                res.render('user/borrowedBook', {data, isAdmin: req.session.isAdmin})
             })
             .catch(err => {
                 console.log(err);

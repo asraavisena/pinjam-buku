@@ -7,13 +7,14 @@
     <title>Borrowed Books</title>
 </head>
 <body>
+    <%- include("../components/navbar.ejs") %>
+    <% if(!isAdmin) { %>
     <h1>List borrowed Books</h1>
     <table border="2px">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Category</th>
-                <th>Return Date</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -22,11 +23,13 @@
                 <tr>
                     <td><%= el.name %></td>
                     <td><%= el.category %></td>
-                    <td><%= el.UserBooks.returnDate %></td>
                     <td><a href="/user/return/<%= el.id %>">Return</a></td>
                 </tr>
             <% }) %>
         </tbody>
     </table>
+    <% } else { %>
+        <p>You have no access to this site</p>
+    <% } %>
 </body>
 </html>
