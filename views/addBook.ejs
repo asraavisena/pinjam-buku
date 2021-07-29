@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>student add page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="margin: 50px 30px 0 30px;">
+  <h2 style="color: salmon;">Add new Book Data</h2>
+  <a style="color: teal;" href="/books">Back to Books List</a><br><br>
+  <form action="/books/add" method="POST">
+    <div class="mb-3">
+      <label class="form-label">Judul</label><br>
+      <input type="text" name="name" placeholder=""><br><br>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Penulis</label><br>
+      <input type="text" name="penulis" placeholder=""><br><br>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Description</label><br>
+      <textarea name="description" id="" cols="23" rows="5"></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">URL Image</label><br>
+      <input type="text" name="urlImage" placeholder=""><br><br>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Stock</label><br>
+      <input type="number" name="stock" placeholder=""><br><br>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Category</label><br>
+      <select style="width: auto;" class="form-select" name="category" id="">
+        <option value="">--Please Select--</option>
+        <option value="Filsafat">Filsafat</option>
+        <option value="Sains">Sains</option>
+        <option value="Teknologi">Teknologi</option>
+        <option value="Agama">Agama</option>
+        <option value="Psikologi">Psikologi</option>
+        <option value="Sastra">Sastra</option>
+        <option value="Tentang Cinta :)">Tentang Cinta :)</option>
+      </select>
+    </div>
+    <input style="background-color: teal;" class="btn btn-primary" type="submit" value="SUBMIT">
+    <a style="background-color: red;" class="btn btn-primary" href="/books">Cancel</a>
+  </form>
+  <br>
+  <br>
+</body>
+</html>

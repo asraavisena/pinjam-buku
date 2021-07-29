@@ -25,5 +25,11 @@ router.post('/login', UserController.postLogin)
 router.get(`/books`, auth, Controller.getBookList)
 
 router.use('/user', auth, userRouter)
+router.get(`/books`, Controller.getBookList)
+router.get(`/books/add`, Controller.getAddBook)
+router.post(`/books/add`, Controller.postAddBook)
+router.get(`/books/:id/edit`, Controller.getEditBook)
+router.post(`/books/:id/edit`, Controller.postEditBook)
+router.get(`/books/:id/delete`, Controller.getDeleteBook)
 
 module.exports = router

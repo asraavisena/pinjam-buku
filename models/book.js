@@ -13,6 +13,12 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       Book.belongsToMany(models.User, {through: 'UserBooks'})
     }
+    getSummary() {
+      return `${this.name.toUpperCase()} - ${this.penulis.toUpperCase()}`
+    }
+    static findDataByPkUsingStaticMethod(id) {
+      return Book.findByPk(id)
+    }
   };
   Book.init({
     name: DataTypes.STRING,
