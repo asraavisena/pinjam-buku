@@ -12,6 +12,12 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
     }
+    getSummary() {
+      return `${this.name.toUpperCase()} - ${this.penulis.toUpperCase()}`
+    }
+    static findDataByPkUsingStaticMethod(id) {
+      return Book.findByPk(id)
+    }
   };
   Book.init({
     name: DataTypes.STRING,

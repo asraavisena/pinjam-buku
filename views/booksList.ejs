@@ -18,7 +18,7 @@
     <a style="background-color: salmon; color: teal; padding: 7px 10px; border-radius: 10px; text-decoration: unset;" href="/">Home</a>
     <a style="background-color: salmon; color: teal; padding: 7px 10px; border-radius: 10px; text-decoration: unset;" href="/books">Books List</a>
   </header> <br>
-  <a style="color: teal;" href="http://localhost:3000/movies/add">Add Book</a> <br>
+  <a style="color: teal;" href="/books/add">Add Book</a> <br>
   <br>
   <table class="table table-bordered border-primary">
     <tr>
@@ -50,7 +50,9 @@
           <%= el.stock %>
         </td>
         <td style="padding: 80px 20px ;">
-          <button class="btn btn-lg btn-primary" href="/books/<%= el.id %>/rent" type="button" onclick="return confirm('Are you sure? alias apakah anda yakin?');" >Rent</button>
+          <a style="background-color: salmon;" class="btn btn-lg btn-primary" href="/books/<%= el.id %>/delete" onclick="return confirm('Are you sure? alias apakah anda yakin?');">Delete</a>
+          <a style="background-color: teal;" class="btn btn-lg btn-primary" href="/books/<%= el.id %>/edit" >Edit</a>
+          
         </td>
       </tr>
       <% }); %>
