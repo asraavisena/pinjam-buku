@@ -6,7 +6,7 @@ const router = express.Router()
 const Controller = require('../controllers/controller');
 
 // router.use('/user', userRouter)
-router.get('/',, auth, (req, res) => {
+router.get('/', auth, (req, res) => {
     res.render('home.ejs')
 })
 
