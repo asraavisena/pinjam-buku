@@ -33,6 +33,7 @@ class Controller {
         console.log(err);
         res.send(err)
       })
+  }
 
   static getAddBook(req, res) {
     res.render(`addBook.ejs`)
