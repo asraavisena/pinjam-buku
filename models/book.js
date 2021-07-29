@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Book.belongsToMany(models.User, {through: 'UserBooks'})
     }
     getSummary() {
       return `${this.name.toUpperCase()} - ${this.penulis.toUpperCase()}`
