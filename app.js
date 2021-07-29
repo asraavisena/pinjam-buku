@@ -1,6 +1,7 @@
 const express = require('express')
 const router = require('./routes/routes')
 const session = require('express-session')
+const nodemailer = require("nodemailer");
 const app = express()
 const port = 3000
 
