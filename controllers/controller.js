@@ -4,7 +4,7 @@ class Controller {
   static getBookList(req, res) {
     Book.findAll()
     .then(data => {
-      res.render(`booksList.ejs`, { data })
+      res.render(`booksList.ejs`, { data, isAdmin: req.session.isAdmin })
     })
     .catch(err => {
       console.log(err);

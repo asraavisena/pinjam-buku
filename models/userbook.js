@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   UserBook.init({
     UserId: DataTypes.INTEGER,
     BookId: DataTypes.INTEGER,
-    returnDate: DataTypes.DATE
+    // returnDate: DataTypes.DATE
   }, {
     sequelize,
     modelName: 'UserBook',

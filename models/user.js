@@ -19,7 +19,9 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     email: {
       type: DataTypes.STRING,
-      unique: true
+      unique: {
+        msg: 'Email should be unique'
+      }
     },
     password: DataTypes.STRING,
     isAdmin: DataTypes.BOOLEAN
@@ -29,6 +31,7 @@ module.exports = (sequelize, DataTypes) => {
   });
   User.beforeCreate((data, options) => {
     data.password = hashPassword(data.password)
+    data.isAdmin = false
   })
   return User;
 };
