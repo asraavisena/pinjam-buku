@@ -37,10 +37,9 @@ module.exports = (sequelize, DataTypes) => {
   User.afterCreate((data, options) => {
     // menghubungkan ke gmail
     let transporter = nodemailer.createTransport({
-      pool: true,
       service: `gmail`,
       host: 'smtp.gmail.com',
-      port: 465,
+      port: 587,
       secure: true, // use TLS
       auth: {
         user: `serititiga@gmail.com`,

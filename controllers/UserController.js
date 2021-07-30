@@ -14,7 +14,7 @@ class UserController {
         }
         User.create(data)
         .then(data => {
-            res.send(data)
+            res.render('user/successRegister')
         })
         .catch(err => {
             res.send(err.errors[0].message)
